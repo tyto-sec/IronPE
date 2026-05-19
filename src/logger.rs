@@ -11,3 +11,7 @@ pub fn log_info(msg: &str) {
 pub fn log_error(msg: &str) {
     println!("{} {}", "[-]".red(), msg);
 }
+
+pub fn log_warn(msg: &str) {
+    println!("\x1b[33m[!] {}\x1b[0m", msg);
+}
